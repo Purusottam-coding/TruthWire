@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mukta:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --font-nepali: 'Mukta', 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', var(--font-nepali);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nepali-text {
+  font-family: 'Mukta', 'Noto Sans Devanagari', sans-serif;
+  font-feature-settings: "liga" 1, "dlig" 1;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+}
+
+/* Festive Celebration Animations (Dashain & Tihar) */
+@keyframes floatDown {
+  0% {
+    transform: translateY(-20px) rotate(0deg) translateX(0px);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.85;
+  }
+  85% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes swayKite {
+  0%, 100% {
+    transform: translateY(0px) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(8deg);
+  }
+}
+
+@keyframes flickerDiya {
+  0%, 100% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.7));
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 18px rgba(251, 191, 36, 1));
+  }
+}
+
+.animate-float-petal {
+  animation: floatDown linear infinite;
+}
+
+.animate-sway-kite {
+  animation: swayKite 4s ease-in-out infinite;
+}
+
+.animate-flicker-diya {
+  animation: flickerDiya 2s ease-in-out infinite;
+}
