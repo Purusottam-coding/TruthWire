@@ -19,24 +19,6 @@ TruthWire bridges the gap between fast-breaking developments and verified factua
 
 ---
 
-## 🏗️ Architecture & Repository Structure
-
-```text
-TruthWire/
-├── backend/                    # Python FastAPI service, models, seed, nepali_utils & tests
-│   ├── app/                    # API endpoints, routers, database & services
-│   ├── nepali_utils/           # Preeti-to-Unicode converter & Devanagari normalizer
-│   ├── tests/                  # API and integration test suite
-│   ├── docs/                   # implementation.md & verification-policy.md
-│   └── requirements.txt
-├── frontend/                   # Next.js 16 app (App Router, Tailwind CSS, Lucide, Devanagari Fonts)
-│   ├── src/                    # UI screens, evidence modal, feed filters, nepali_utils
-│   └── package.json
-└── README.md
-```
-
----
-
 ## 🚀 Quick Start Guide
 
 ### 1. Prerequisites
